@@ -13,7 +13,7 @@ struct ContentView: View {
                     Label("Products", systemImage: "list.bullet")
                 }
 
-            Text("Search")
+            SearchView()
                 .tabItem {
                     Label("Search", systemImage: "magnifyingglass")
                 }
