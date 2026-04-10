@@ -2,8 +2,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Product Manager")
-            .font(.largeTitle)
-            .bold()
+        TabView {
+            Text("Browse")
+                .tabItem {
+                    Label("Browse", systemImage: "house.fill")
+                }
+
+            Text("Products")
+                .tabItem {
+                    Label("Products", systemImage: "list.bullet")
+                }
+
+            Text("Search")
+                .tabItem {
+                    Label("Search", systemImage: "magnifyingglass")
+                }
+        }
     }
 }
