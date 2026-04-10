@@ -8,7 +8,7 @@ struct ContentView: View {
                     Label("Browse", systemImage: "house.fill")
                 }
 
-            Text("Products")
+            ProductListView()
                 .tabItem {
                     Label("Products", systemImage: "list.bullet")
                 }
