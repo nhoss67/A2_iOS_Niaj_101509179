@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BB0000000000000000000001 /* A2_iOS_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000001 /* A2_iOS_AppApp.swift */; };
+		BB000000000000000000000A /* ProductModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000A /* ProductModel.xcdatamodeld */; };
 		BB000000000000000000000B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000B /* Assets.xcassets */; };
 		BB000000000000000000000C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -15,6 +16,7 @@
 /* Begin PBXFileReference section */
 		AA000000000000000000000C /* A2_iOS_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A2_iOS_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0000000000000000000001 /* A2_iOS_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "A2_iOS_AppApp.swift"; sourceTree = "<group>"; };
+		AA000000000000000000000A /* ProductModel.xcdatamodeld */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodeld; path = ProductModel.xcdatamodeld; sourceTree = "<group>"; };
 		AA000000000000000000000B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA000000000000000000000E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,6 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				AA0000000000000000000001 /* A2_iOS_AppApp.swift */,
+				AA000000000000000000000A /* ProductModel.xcdatamodeld */,
 				AA000000000000000000000B /* Assets.xcassets */,
 				CC0000000000000000000004 /* Preview Content */,
 			);
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB0000000000000000000001 /* A2_iOS_AppApp.swift in Sources */,
+				BB000000000000000000000A /* ProductModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
