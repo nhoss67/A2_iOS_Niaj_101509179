@@ -9,6 +9,8 @@ struct BrowseView: View {
         animation: .default
     ) private var products: FetchedResults<Product>
 
+    @State private var currentIndex: Int = 0
+
     var body: some View {
         NavigationView {
             VStack {
@@ -23,9 +25,28 @@ struct BrowseView: View {
                         .foregroundColor(.secondary)
                     Spacer()
                 } else {
-                    Text("Products loaded: \(products.count)")
-                        .font(.title3)
-                        .padding()
+                    let product = products[min(currentIndex, products.count - 1)]
+
+                    VStack(spacing: 16) {
+                        Text("Product \(currentIndex + 1) of \(products.count)")
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+
+                        Text(product.name ?? "Unknown")
+                            .font(.title2)
+                            .bold()
+
+                        Text(String(format: "$%.2f", product.price))
+                            .font(.title3)
+                            .foregroundColor(.blue)
+                    }
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color(.systemGray6))
+                    .cornerRadius(12)
+                    .padding()
+
+                    Spacer()
                 }
             }
             .navigationTitle("Browse Products")
