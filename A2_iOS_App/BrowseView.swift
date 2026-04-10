@@ -78,6 +78,41 @@ struct BrowseView: View {
                         }
                         .padding()
                     }
+
+                    // Navigation buttons
+                    HStack(spacing: 12) {
+                        Button(action: {
+                            withAnimation { currentIndex -= 1 }
+                        }) {
+                            HStack {
+                                Image(systemName: "chevron.left")
+                                Text("Previous")
+                            }
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 12)
+                            .background(currentIndex > 0 ? Color.blue : Color.gray.opacity(0.4))
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                        }
+                        .disabled(currentIndex == 0)
+
+                        Button(action: {
+                            withAnimation { currentIndex += 1 }
+                        }) {
+                            HStack {
+                                Text("Next")
+                                Image(systemName: "chevron.right")
+                            }
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 12)
+                            .background(currentIndex < products.count - 1 ? Color.blue : Color.gray.opacity(0.4))
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                        }
+                        .disabled(currentIndex == products.count - 1)
+                    }
+                    .padding(.horizontal)
+                    .padding(.bottom, 12)
                 }
             }
             .navigationTitle("Browse Products")
