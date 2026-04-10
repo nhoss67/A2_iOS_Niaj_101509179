@@ -10,6 +10,7 @@ struct BrowseView: View {
     ) private var products: FetchedResults<Product>
 
     @State private var currentIndex: Int = 0
+    @State private var showingAddProduct = false
 
     var body: some View {
         NavigationView {
@@ -116,6 +117,16 @@ struct BrowseView: View {
                 }
             }
             .navigationTitle("Browse Products")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: { showingAddProduct = true }) {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
+            .sheet(isPresented: $showingAddProduct) {
+                AddProductView()
+            }
         }
     }
 }

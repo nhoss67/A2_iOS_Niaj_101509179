@@ -9,6 +9,8 @@ struct ProductListView: View {
         animation: .default
     ) private var products: FetchedResults<Product>
 
+    @State private var showingAddProduct = false
+
     var body: some View {
         NavigationView {
             Group {
@@ -53,6 +55,14 @@ struct ProductListView: View {
                 ToolbarItem(placement: .navigationBarLeading) {
                     EditButton()
                 }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: { showingAddProduct = true }) {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
+            .sheet(isPresented: $showingAddProduct) {
+                AddProductView()
             }
         }
     }
