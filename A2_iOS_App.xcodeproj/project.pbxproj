@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BB0000000000000000000001 /* A2_iOS_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000001 /* A2_iOS_AppApp.swift */; };
+		BB0000000000000000000003 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000003 /* PersistenceController.swift */; };
 		BB000000000000000000000A /* ProductModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000A /* ProductModel.xcdatamodeld */; };
 		BB0000000000000000000004 /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000004 /* Product+CoreDataClass.swift */; };
 		BB0000000000000000000005 /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000005 /* Product+CoreDataProperties.swift */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		AA000000000000000000000C /* A2_iOS_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A2_iOS_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0000000000000000000001 /* A2_iOS_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "A2_iOS_AppApp.swift"; sourceTree = "<group>"; };
+		AA0000000000000000000003 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		AA000000000000000000000A /* ProductModel.xcdatamodeld */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodeld; path = ProductModel.xcdatamodeld; sourceTree = "<group>"; };
 		AA0000000000000000000004 /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AA0000000000000000000005 /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				AA0000000000000000000001 /* A2_iOS_AppApp.swift */,
+				AA0000000000000000000003 /* PersistenceController.swift */,
 				AA0000000000000000000004 /* Product+CoreDataClass.swift */,
 				AA0000000000000000000005 /* Product+CoreDataProperties.swift */,
 				AA000000000000000000000A /* ProductModel.xcdatamodeld */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB0000000000000000000001 /* A2_iOS_AppApp.swift in Sources */,
+				BB0000000000000000000003 /* PersistenceController.swift in Sources */,
 				BB0000000000000000000004 /* Product+CoreDataClass.swift in Sources */,
 				BB0000000000000000000005 /* Product+CoreDataProperties.swift in Sources */,
 				BB000000000000000000000A /* ProductModel.xcdatamodeld in Sources */,
